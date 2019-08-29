@@ -24,3 +24,9 @@ Story ideas: DND story, Story about success, story about someones day in the San
 * add ASCII art/design to your story
 * Take Mad Libs out of the terminal and have it running as a website.
 
+### User Stories
+
+* as a user I want to be able to read a small dialog intially telling me instructions.
+* as a user I want to be able to see what kind I need to type
+* As a user I want to be able to put in words and move through the process fluently.
+* As a user I want to be able see my completed story. Maybe even see other completed stories.
