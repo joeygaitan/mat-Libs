@@ -1,10 +1,17 @@
 <!-- templates/playlists_index.html -->
 {% extends 'base.html' %}
-
 {% block content %}
-    <h1>Playlists</h1>
-    {% for playlist in playlists %}
-        <h2>{{ playlist.title }}</h2>
-        <small>{{ playlist.description }}</small>
-    {% endfor %}
+    <h1 style="text-align: center; margin-top:40px">Hello and Welcome to the Random Story Builder</h1>
+    <button style="margin: 20% 50% 50% 50%">Start New Story</button>
+    <form method="post" action=".">
+        <fieldset>
+            <legend>SAMPLE FORM</legend>
+            <ul>
+                <li>First Name: <input name='first'>
+                </li>
+            </ul>
+            <input type='submit' value='Submit Form'>
+        </fieldset>
+    </form>
+        
 {% endblock %}
