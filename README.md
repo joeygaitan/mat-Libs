@@ -30,3 +30,5 @@ Story ideas: DND story, Story about success, story about someones day in the San
 * as a user I want to be able to see what kind I need to type
 * As a user I want to be able to put in words and move through the process fluently.
 * As a user I want to be able see my completed story. Maybe even see other completed stories.
+
+nouns, pronouns,
