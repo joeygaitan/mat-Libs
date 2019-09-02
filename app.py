@@ -2,12 +2,15 @@ from flask import Flask, render_template,request
 app = Flask(__name__)
 
 
+
 stories = [
-    {"first":"Hello ","second":"","third":"","fourth":"","fifth":""},
-    {"first":"Greetings ","second":"","third":"","fourth":"","fifth":""},
-    {"first":"Hola ","second":"","third":"","fourth":"","fifth":""},
-    {"first":"Welcome ","second":"","third":"","fourth":"","fifth":""},
-    {"first":"","second":"","third":"","fourth":"","fifth":""}
+    ['Hello ',"Greetings ","Hola ","Nice to finally you ", "Welcome "],
+    ["What brings you here ", "We meet again ", ""]
+    {"second":"","third":"","fourth":"","fifth":""},
+    {"second":"","third":"","fourth":"","fifth":""},
+    {"second":"","third":"","fourth":"","fifth":""},
+    {"second":"","third":"","fourth":"","fifth":""},
+    {"second":"","third":"","fourth":"","fifth":""}
 ]
 
 user = {"name":"","gender":""}
@@ -15,6 +18,10 @@ verbs = []
 nouns = []
 adjectives = []
 pronouns=[]
+
+def storyScrambler(stories):
+    stories
+    return 
 
 
 @app.route("/")
@@ -25,8 +32,10 @@ def index():
 def formHandler():
     print('hello')
     first = request.form['first']
+    second = request.form['second']
     verbs.append(first)
-    return render_template('base.html',first=first)
+    verbs.append(second)
+    return render_template('base.html',verbs=verbs)
 # @app.route("/playlists")
 # def playlist():
 #     """Return playlists"""

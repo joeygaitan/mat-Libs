@@ -4,13 +4,15 @@
 <head>
   <meta charset='utf-8'>
   <title>Playlister</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
 </head>
 <body>
 
     {% block content %}
-        BODY CONTENT GOES HERE
-
-        {% endblock %}
+        <h1>{{verbs[0]}}</h1>
+        <h1>{{verbs[1]}}</h1>
+        {{verbs}}
+    {% endblock %}
 
 </body>
 </html>
