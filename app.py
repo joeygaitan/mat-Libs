@@ -42,5 +42,5 @@ def formHandler():
     pro1 = request.form['pro1']
     return render_template('base.html',newlist=newlist, pro=pro, noun=noun, adjective=adjective, verb=verb, noun1 = noun1, pro1=pro1)
 
-app.run(debug=True)
+app.run(host='0.0.0.0',debug=True)
 
