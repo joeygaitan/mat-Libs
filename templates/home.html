@@ -1,30 +1,27 @@
 <!-- templates/playlists_index.html -->
 {% extends 'base.html' %}
 {% block content %}
+<div>
     <h1 style="text-align: center; margin-top:40px">Hello and Welcome to the Random Story Builder</h1>
     <button style="margin: 20px;margin-left:20px;">Start New Story</button>
 
     <form method="post" action=".">
         <fieldset>
             <legend>Please Input this information</legend>
-            <table class="table">
+            <table class="table" style=" display: table-cell;
+            vertical-align: inherit;">
                 <tr>
-                    <th>
-
-                    </th>
-                </tr>
-                <tr>
-                  <td>Please Input your pro noun of choice: <input name='pronoun'></td>
+                  <td>Please Input your pronoun of choice: <input name='pronoun' required></td>
                   <br/>
-                  <td>Please input your name: <input name='name'></td>
+                  <td>Please input a noun<input name='noun' required></td>
                   <br/>
-                  <td>Please input a verb: <input name='verb1'></td>
+                  <td>Please input a adejective<input name='adjective' required></td>
                   <br/>
-                  <td>Please input a verb: <input name='verb2'></td>
+                  <td>Please input a verb: <input name='verb' required></td>
                 </tr>
               </table>
             <input type='submit' value='Submit Form'>
         </fieldset>
     </form>
-        
+</div>
 {% endblock %}

@@ -1,6 +1,3 @@
-Story ideas: DND story, Story about success, story about someones day in the San Francisco, story about night out with his or her friends
-
-
 ### Requirements
 1. Provide a Mad Libs story for users to fill in.
 2. Collect user input for the words
@@ -31,4 +28,9 @@ Story ideas: DND story, Story about success, story about someones day in the San
 * As a user I want to be able to put in words and move through the process fluently.
 * As a user I want to be able see my completed story. Maybe even see other completed stories.
 
-nouns, pronouns,
+###How it works
+* It goes to a list of lists
+* It asks for a pronoun first
+* It asks for a noun
+* It asks for a adjective
+* It asks for a verb
