@@ -4,13 +4,13 @@
 <head>
   <meta charset='utf-8'>
   <title>Story</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+  <link rel="stylesheet" href="./static/styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
   <div style="text-align: left">
     {% block content %}
-    <p>{{newlist[0]}}{{pro}}{{newlist[1]}}{{noun}}{{newlist[2]}}{{adjective}}{{newlist[3]}}{{verb}}{{newlist[4]}}</p>
+    <p style="text-align: center; margin-top: 50px;">{{newlist[0]}}{{pro}}{{newlist[1]}}{{noun}}{{newlist[2]}}{{adjective}}{{newlist[3]}}{{verb}}{{newlist[4]}}{{noun1}}{{newlist[5]}}{{pro1}}</p>
     {% endblock %}
   </div>
 </body>
