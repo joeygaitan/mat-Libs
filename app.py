@@ -28,7 +28,7 @@ newlist = storyScrambler(stories)
 @app.route("/")
 def index():
     """Return homepage."""
-    return render_template('home.html', newStory=newStory)
+    return render_template('home.html')
 @app.route('/',methods=['POST'])
 def formHandler():
     print('hello')
