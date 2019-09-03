@@ -41,6 +41,5 @@ def formHandler():
 # def playlist():
 #     """Return playlists"""
 #     return render_template('playlists_index.html', playlists=playlists)
-app.run(host='96.78.162.189', port="5000"debug=True)
-
+app.run(host='96.78.162.189', port="5000", debug=True)
 
