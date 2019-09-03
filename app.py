@@ -1,5 +1,6 @@
 from flask import Flask, render_template,request
 import random
+import os
 app = Flask(__name__)
 
 
@@ -41,5 +42,6 @@ def formHandler():
 # def playlist():
 #     """Return playlists"""
 #     return render_template('playlists_index.html', playlists=playlists)
-app.run(host='127.0.0.1', port="5000", debug=True)
+port = int(os.environ.get('PORT', 5000))
+app.run(host='127.0.0.1', port=port, debug=True)
 
