@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
 </head>
 <body>
-
+  <div style="text-align: left">
     {% block content %}
     <p>{{newlist[0]}}{{pro}}{{newlist[1]}}{{noun}}{{newlist[2]}}{{adjective}}{{newlist[3]}}{{verb}}{{newlist[4]}}</p>
     {% endblock %}
-
+  </div>
 </body>
 </html>

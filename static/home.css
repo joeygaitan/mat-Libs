@@ -2,6 +2,7 @@ body{
     background-color: red;
 }
 .table{
+    background-color: blue;
     display: table-cell;
     vertical-align: inherit;
 }
