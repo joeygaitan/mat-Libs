@@ -1,41 +1,42 @@
 from flask import Flask, render_template,request
+import random
 app = Flask(__name__)
 
 
 
 stories = [
-    ['Hello ',"Greetings ","Hola ","Nice to finally you ", "Welcome "],
-    ["What brings you here ", "We meet again ", ""]
-    {"second":"","third":"","fourth":"","fifth":""},
-    {"second":"","third":"","fourth":"","fifth":""},
-    {"second":"","third":"","fourth":"","fifth":""},
-    {"second":"","third":"","fourth":"","fifth":""},
-    {"second":"","third":"","fourth":"","fifth":""}
+    ['Hello ',"Greetings ","Hola "," Nice to finally meet you ", " Welcome "],
+    ["What brings you here ", " We meet again ", " Nice to see you again "," What brings you here "," Its always a pleasure to see you "],
+    [". I bet you don't ",". Would you know the ",". Somehow the ",". The grand scale of the ",". I was amazed by the "],
+    [" of these "," of this "],
+    [". Please ",". Somehow can you "," I wonder if you can "," Could you be a dear and "," I will have to "]
 ]
 
-user = {"name":"","gender":""}
-verbs = []
-nouns = []
-adjectives = []
-pronouns=[]
-
 def storyScrambler(stories):
-    stories
-    return 
+    newList = []
+    for story in stories:
+        if len(story) == 2:
+            newList.append(story[random.randint(1,2)-1])
+            continue
+        listNumber = random.randint(1,5)
+        newList.append(story[listNumber-1])
+    return newList
+
+newlist = storyScrambler(stories)
 
 
 @app.route("/")
 def index():
     """Return homepage."""
-    return render_template('home.html', stories=stories, verbs=verbs, nouns=nouns, adjectives=adjectives,pronouns=pronouns)
+    return render_template('home.html', newStory=newStory)
 @app.route('/',methods=['POST'])
 def formHandler():
     print('hello')
-    first = request.form['first']
-    second = request.form['second']
-    verbs.append(first)
-    verbs.append(second)
-    return render_template('base.html',verbs=verbs)
+    pro = request.form['pronoun']
+    noun = request.form['noun']
+    adjective = request.form['adjective']
+    verb = request.form['verb']
+    return render_template('base.html',newlist=newlist, pro=pro, noun=noun, adjective=adjective, verb=verb)
 # @app.route("/playlists")
 # def playlist():
 #     """Return playlists"""
