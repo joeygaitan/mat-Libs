@@ -11,7 +11,7 @@ stories = [
     [". I bet you don't ",". Would you know the ",". Somehow the ",". The grand scale of the ",". I was amazed by the "],
     [" of these "," of this "],
     [". Please finish the ",". Somehow can you complete the "," I wonder if you can destroy this"," Could you be a dear and end the "," I will have to wait and "],
-    ['. If you do this for ', ". If this is done for ", ". If it is achieved by ", ". When it is completed by ", "They will ask when "]
+    ['. If you do this for ', ". If this is done for ", ". If it is achieved by ", ". When it is completed by ", ". They will ask when "]
 ]
 #This function scrammbles the list of lists
 def storyScrambler(stories):
@@ -25,7 +25,6 @@ def storyScrambler(stories):
     return newList
 
 newlist = storyScrambler(stories)
-
 
 @app.route("/")
 def index():
@@ -42,5 +41,5 @@ def formHandler():
     pro1 = request.form['pro1']
     return render_template('base.html',newlist=newlist, pro=pro, noun=noun, adjective=adjective, verb=verb, noun1 = noun1, pro1=pro1)
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
 

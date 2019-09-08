@@ -1,5 +1,8 @@
 url: https://infinite-cove-23253.herokuapp.com
 
+### How to rerun
+pip install -r requirements.txt and it should run locally in port 5000. In addition at the top of the page there is a list where you can see the deployed version.
+
 ### Requirements
 1. Provide a Mad Libs story for users to fill in.
 2. Collect user input for the words
@@ -30,9 +33,11 @@ url: https://infinite-cove-23253.herokuapp.com
 * As a user I want to be able to put in words and move through the process fluently.
 * As a user I want to be able see my completed story. Maybe even see other completed stories.
 
-###How it works
+### How it works
 * It goes to a list of lists
 * It asks for a pronoun first
 * It asks for a noun
 * It asks for a adjective
 * It asks for a verb
+
+
