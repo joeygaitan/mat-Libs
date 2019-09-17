@@ -1,7 +1,9 @@
 url: https://infinite-cove-23253.herokuapp.com
 
 ### How to rerun
-pip install -r requirements.txt and it should run locally in port 5000. In addition at the top of the page there is a list where you can see the deployed version.
+Run this command
+```pip3 install -r requirements.txt```
+It should run locally in port 5000. In addition at the top of the page there is a list where you can see the deployed version.
 
 ### Requirements
 1. Provide a Mad Libs story for users to fill in.
