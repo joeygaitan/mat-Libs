@@ -1,8 +1,8 @@
 url: https://infinite-cove-23253.herokuapp.com
 
 ### How to rerun
-Run this command
-```pip3 install -r requirements.txt```
+Run this command<br>
+```pip3 install -r requirements.txt```<br>
 It should run locally in port 5000. In addition at the top of the page there is a list where you can see the deployed version.
 
 ### Requirements
